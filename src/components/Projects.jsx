@@ -20,7 +20,7 @@ const projects = [
     title: "My Portfolio App",
     description: "A personal portfolio showcasing my projects, skills, and resume.",
     tech: ["React", "Context API", "Tailwind CSS", "Formspree"],
-    link: "https://github.com/ByteSaurabh/MyPortfolio_App",
+    link: "https://my-portfolio-mocha-beta-26.vercel.app/",
   },
   {
     title: "Your Own Password Generator",
