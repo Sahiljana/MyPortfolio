@@ -1,0 +1,72 @@
+/* Skills Section */
+.skills-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* Matches Hero and Projects sections */
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem; /* Matches the title size in other sections */
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8, 0 0 20px #00c6a0; /* Glowing effect */
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Skills Card */
+.skills-card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 255, 200, 0.5); /* Glowing shadow on hover */
+}
+
+/* Skills Card Title */
+.skills-card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #00ffc8;
+  text-shadow: 0 0 8px #00ffc8, 0 0 15px #00c6a0; /* Matches glowing effect */
+}
+
+/* Skills Items */
+.skills-card__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills-card__item {
+  background: #00ffc8;
+  color: #0f172a;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card__item:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 255, 200, 0.5); /* Glowing effect on hover */
+}

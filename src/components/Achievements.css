@@ -1,0 +1,81 @@
+/* Achievements Section */
+.achievements-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* Matches Hero, Projects, and Skills sections */
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem; /* Matches the title size in other sections */
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8, 0 0 20px #00c6a0; /* Glowing effect */
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2); /* Vertical timeline line */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.2); /* Vertical timeline line */
+}
+
+/* Timeline Card */
+.timeline-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 40px;
+}
+
+.timeline-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 255, 200, 0.5); /* Glowing shadow on hover */
+}
+
+/* Timeline Year */
+.timeline-card__year {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  background: #00ffc8;
+  color: #0f172a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 255, 200, 0.5); /* Glowing effect */
+}
+
+/* Timeline Content */
+.timeline-card__content {
+  text-align: left;
+}
+
+.timeline-card__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.9;
+}

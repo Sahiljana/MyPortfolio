@@ -1,0 +1,114 @@
+/* Projects Section */
+.projects {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* Matches the hero section */
+  color: #ffffff;
+  text-align: center;
+}
+
+.projects__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8, 0 0 20px #00c6a0;
+}
+
+/* Projects Grid */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 projects per row */
+  gap: 20px; /* Spacing between cards */
+  justify-items: center;
+  padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 projects per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr; /* 1 project per row on small screens */
+  }
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 255, 200, 0.5);
+}
+
+/* Project Title */
+.project-card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00ffc8;
+}
+
+/* Project Description */
+.project-card__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* Project Tech Stack */
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.project-card__tech-item {
+  background: #00ffc8;
+  color: #0f172a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Project Link */
+.project-card__link {
+  display: inline-block;
+  padding: 12px 24px; /* Larger padding for better visibility */
+  background: linear-gradient(135deg, #00ffc8, #00c6a0); /* Gradient background */
+  color: #0f172a; /* Dark text for contrast */
+  border-radius: 25px; /* Rounded button */
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 255, 200, 0.3); /* Subtle shadow */
+}
+
+.project-card__link:hover {
+  background: linear-gradient(135deg, #00c6a0, #00ffc8); /* Reverse gradient on hover */
+  color: #ffffff; /* White text on hover */
+  box-shadow: 0 6px 15px rgba(0, 255, 200, 0.5); /* Stronger shadow on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+.project-card__link:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 10px rgba(0, 255, 200, 0.3); /* Reset shadow */
+}
